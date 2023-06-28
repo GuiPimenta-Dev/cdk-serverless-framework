@@ -117,9 +117,41 @@ This is how the pipeline is going to look like on AWS:
 
 All Lambda functions connected to the API Gateway are automatically documented with Swagger.
 
-To generate the documentation, you need to add an Input data class and an Output data class to your Lambda function, specifying the parameters to be generated. If you are using a parameter in the URL (path), you also need to provide a Path data class. Please refer to the file `functions/example/main.py` to explore all the available options for creating the documentation correctly.
+To generate the documentation, you need to add an Input data class and an Output data class to your Lambda function, specifying the parameters to be generated. If you are using a parameter in the URL (path), you also need to provide a Path data class.
 
-Below is an example of how the documentation will appear:
+Below is a demonstration of the data classes with the supported documentation features.
+
+    from dataclasses import dataclass
+    from typing import List, Literal, Optional
+
+    @dataclass
+    class Path:
+        id: str
+
+
+    @dataclass
+    class ExampleObject:
+        name: str
+        age: int
+
+
+    @dataclass
+    class Input:
+        string_input: str
+        int_input: int
+        float_input: float
+        boolean_input: bool
+        list_input: List[str]
+        object_input: ExampleObject
+        literal_input: Literal["a", "b", "c"]
+        optional_input: Optional[str]
+
+
+    @dataclass
+    class Output:
+        message: str
+
+Here is an example of how the documentation will appear:
 
 <div style="text-align: center;">
 <img src="https://i.imgur.com/vxAT8Tt.jpg" alt="Swagger" width="900" height="500">
