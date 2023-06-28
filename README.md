@@ -151,7 +151,7 @@ Below is a demonstration of the data classes with the supported documentation fe
     class Output:
         message: str
 
-Here is an example of how the documentation will appear:
+Here is an example of how the documentation will look like:
 
 <div style="text-align: center;">
 <img src="https://i.imgur.com/vxAT8Tt.jpg" alt="Swagger" width="900" height="500">
