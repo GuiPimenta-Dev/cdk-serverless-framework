@@ -110,7 +110,7 @@ This is how the pipeline is going to look like on AWS:
 </div>
 
 <div style="text-align: center;">
-<img src="https://i.imgur.com/EntefXu.jpg" alt="Prod" width="900" height="700">
+<img src="https://i.imgur.com/EntefXu.jpg" alt="Prod" width="900" height="500">
 </div>
 
 ## Documentation
@@ -134,7 +134,7 @@ In production environment, there is an alarm system that triggers an alarm and s
 This is an example of a test alarm sent on slack:
 
 <div style="text-align: center;">
-<img src="https://i.imgur.com/JKUa1Nt.jpg" alt="Alarm" width="1200" height="700">
+<img src="https://i.imgur.com/JKUa1Nt.jpg" alt="Alarm" width="900" height="500">
 </div>
 
 ## Versioning
